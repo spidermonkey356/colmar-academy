@@ -1,2 +1,2 @@
 # colmar-academy
-Learning to sharpen my html and css skills by building a website.
+My IDE is VSCode, writing code to get better at HTML and CSS.

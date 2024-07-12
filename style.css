@@ -1,0 +1,281 @@
+/* Universal selector */
+* {
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Variable colors */
+:root {
+	--dark-grey: #3c3b3d;
+	--light-grey: #8e8e8e;
+	--lighter-grey: #dfdfdf;
+	--lightest-grey: #e9e9e9;
+	--white: #fff;
+	--blue: #107ce7;
+}
+
+body {
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+	a {
+		font-size: 14px;
+	}
+}
+
+/* Header */
+header {
+	height: 64px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: white;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	/* border: 1px solid red; */
+}
+
+/* Nav */
+nav {
+	display: flex;
+	margin-left: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px;
+	/* border: 1px solid dodgerblue; */
+}
+
+/* Nav Child One */
+.logo {
+	background-image: url("./images/ic-logo.svg");
+	height: 35px;
+	width: 35px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	flex-grow: 1;
+	/* border: 1px solid red; */
+}
+
+nav p,
+span {
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	font-size: 1.5rem;
+	/* border: 1px solid red; */
+	padding: 0;
+}
+
+nav span {
+	color: var(--light-grey);
+	font-weight: 1rem;
+	font-weight: 300;
+	margin-left: 1px;
+	/* border: 1px solid red; */
+}
+
+/* Nav Child Two */
+ul {
+	margin-right: 1rem;
+	width: 340px;
+	display: flex;
+	justify-content: space-between;
+	padding: 2px;
+	/* border: 1px solid dodgerblue; */
+}
+
+ul > a {
+	text-decoration: none;
+	color: var(--dark-grey);
+	/* border: 1px solid red; */
+}
+
+/* Hero section */
+.hero {
+	height: 500px;
+	padding: 32px 0 32px 24px;
+	display: flex;
+	gap: 24px;
+	/* margin: 0 1.5rem; */
+	width: 100%;
+	background-color: var(--lighter-grey);
+	/* border: 1px solid dodgerblue; */
+}
+
+/* girls study */
+.girls-study {
+	background-image: url("./images/girls-study.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+	background-color: color var(--lighter-grey);
+	flex: 0 0 60%;
+	/* border: 1px solid dodgerblue; */
+}
+/* hero text container */
+.hero-text-container-left {
+	height: 100%;
+	background-color: var(--lighter-grey);
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 25px;
+	/* border: 2px solid blue; */
+}
+
+.hero-text-container-left h1 {
+	color: var(--dark-grey);
+}
+
+.btn-start-here {
+	padding: 8px 20px;
+	font-size: 16px;
+	color: white;
+	background-color: var(--dark-grey);
+	border: none;
+	width: 95%;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover state for button */
+.btn-start-here:hover {
+	background-color: #0056b3; /* Darker blue */
+}
+
+/* Active state for button */
+.btn-start-here:active {
+	background-color: #004080; /* Even darker blue */
+	transform: scale(0.98);
+}
+
+/* Focus state for button */
+.btn-start-here:focus {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Keep practicing */
+.section-two-container {
+	height: 500px;
+	display: flex;
+	gap: 24px;
+	background-color: var(--white);
+	/* border: 1px solid red; */
+}
+
+.kp-left-container {
+	flex: 0 0 60%;
+	margin: 32px 0 32px 24px;
+	padding: 2px;
+	/* border: 1px solid dodgerblue; */
+}
+
+.man-reading {
+	background-image: url("./images/man-reads-book.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 60%;
+	background-color: color var(--lighter-grey);
+	/* border: 1px solid red; */
+}
+/* kp text container left */
+.kp-left-bottom-text {
+	/* border: 1px solid red; */
+}
+
+.kp-left-bottom-text h2,
+p {
+	padding: 2%;
+	/* border: 1px solid dodgerblue; */
+}
+
+.kp-left-bottom-text p {
+	font-size: 80%;
+	/* border: 1px solid dodgerblue; */
+}
+/***** Keep practicing right container ****/
+.kp-right-container {
+	/* width: 40%; */
+	margin: 32px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	border-left: 2px solid var(--lighter-grey);
+	/* border: 1px solid red; */
+}
+
+.kp-right-container div:nth-child(3) {
+	background-color: var(--lighter-grey);
+}
+
+.orientation-box {
+	display: flex;
+	padding: 3.5%;
+	/* border: 1px solid rebeccapurple; */
+}
+
+.orientation-box .orientation-box-img {
+	background-image: url("images/information-orientation.jpg");
+	flex: 0 0 35%;
+	height: auto;
+}
+
+.our-campus-img {
+	background-image: url("images/information-campus.jpg");
+	flex: 0 0 35%;
+	height: auto;
+	/* border: 8px solid lime; */
+}
+
+.our-guest-lecture-img {
+	background-image: url("images/information-guest-lecture.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 35%;
+}
+
+.orientation-box-txt {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex: 0 0 65%;
+	padding: 4%;
+}
+
+.orientation-box h3 {
+	font-size: 1rem;
+}
+
+.orientation-box p {
+	font-size: 0.8rem;
+}
+
+.orientation-box a {
+	text-decoration: none;
+	color: var(--blue);
+	margin-top: 8px;
+	padding: 0;
+	margin-left: 5px;
+	font-size: 0.8rem;
+}
+
+/* **** Start learning section *** */
